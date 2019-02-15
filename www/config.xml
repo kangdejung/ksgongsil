@@ -15,7 +15,7 @@
 
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
 	<gap:plugin name="cordova-plugin-inappbrowser" source="npm"  />
-	<gap:plugin name="org.apache.cordova.device" />
+	<gap:plugin name="cordova-plugin-uniquedeviceid" source="npm" />
 	
 	<allow-navigation href="*" />
 	<icon src="icon.png" />
