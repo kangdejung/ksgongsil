@@ -6,13 +6,10 @@
 <meta charset="utf-8">
 <script src="cordova.js"></script>
 <script type="text/javascript">
-    function onLoad() {
-        document.addEventListener("deviceready", onDeviceReady, false);
-    }
-	function onDeviceReady() {
-		navigator.splashscreen.hide();
-		alert(device.uuid);
-	}
+    document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    console.log(device.cordova);
+}
 </script>
 <body  onload="onLoad()">
 </body>
