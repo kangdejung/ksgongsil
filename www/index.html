@@ -6,7 +6,11 @@
 <meta charset="utf-8">
 <script src="cordova.js"></script>
 <script type="text/javascript">
-    window.location.href = "http://ksgongsil.dungzi.com/mobile/index/"+device.uuid+"?mobile=1";
+    document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    alert(device.uuid);
+	//window.location.href = "http://ksgongsil.dungzi.com/mobile/index/"+device.uuid+"?mobile=1";
+}
 </script>
 <body  onload="onLoad()">
 </body>
