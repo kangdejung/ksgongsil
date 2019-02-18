@@ -6,13 +6,13 @@
 <meta charset="utf-8">
 <script src="cordova.js"></script>
 <script type="text/javascript">
-    function onLoad() {
-        document.addEventListener("deviceready", onDeviceReady(), false);
-    }
-	function onDeviceReady() {
-		window.location.href = "http://ksgongsil.dungzi.com/mobile/index/"+device.uuid+"?mobile=1";
-	}
+    function init(){
+  document.addEventListener("deviceready", onDeviceReady, false);
+}
+
+function onDeviceReady(){
+  alert('123');
+}
 </script>
-<body  onload="onLoad()">
-</body>
+<body onload="onDeviceReady()"></body>
 </html>
